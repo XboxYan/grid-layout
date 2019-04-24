@@ -1,0 +1,14 @@
+.logo{
+  display: flex;
+  color: #fff;
+  height: 64px;
+  padding: 0 15px;
+  font-size: 24px;
+  align-items: center;
+}
+.logo span{
+  padding-left: 10px;
+}
+.header{
+  background: #fff;
+}

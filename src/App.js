@@ -2,7 +2,7 @@ import styles from './App.module.css';
 
 import React from 'react';
 import { Layout,Icon } from 'antd';
-
+import View from './layout/view';
 const { Header, Footer, Sider, Content } = Layout;
 
 
@@ -14,7 +14,7 @@ const App = () => (
 		</Sider>
 		<Layout>
 			<Header className={styles.header}>Grid Layout</Header>
-			<Content>Content</Content>
+			<Content style={{position:'relative'}}><View/></Content>
 			<Footer>Footer</Footer>
 		</Layout>
 	</Layout>

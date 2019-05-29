@@ -14,7 +14,7 @@ const App = () => (
 		</Sider>
 		<Layout>
 			<Header className={styles.header}>Grid Layout</Header>
-			<Content style={{position:'relative'}}><View/></Content>
+			<Content><View/></Content>
 			<Footer>Footer</Footer>
 		</Layout>
 	</Layout>

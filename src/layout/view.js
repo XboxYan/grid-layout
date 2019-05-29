@@ -12,7 +12,7 @@ export default () => {
             <div className={styles.toolbar_v}>v</div>
             <div className={styles.flex}>
                 <div className={styles.toolbar_h}>h</div>
-                <div className={styles.grid} style={{gridTemplateColumns:fixStyle(gridTemplateColumns),gridTemplateRows:fixStyle(gridTemplateRows),gridGap:fixStyle(gridGap)}}>
+                <div className={styles.grid} onTransitionEnd={()=>console.log('end')} onAnimationIteration={()=>console.log('run')} onAnimationEnd={()=>console.log('end')} style={{gridTemplateColumns:fixStyle(gridTemplateColumns),gridTemplateRows:fixStyle(gridTemplateRows),gridGap:fixStyle(gridGap)}}>
                     {
                         [...Array(gridTemplateColumns.length * gridTemplateRows.length).keys()].map((el,i)=>(<div key={i} className={styles.grid_item}></div>))
                     }

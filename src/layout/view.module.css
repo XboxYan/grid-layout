@@ -25,9 +25,21 @@
     box-shadow: inset 0 0 0 10px #ddd;
     overflow: hidden;
     resize: both;
+    transition: color .1s;
+}
+
+.grid:active{
+    color: #fff;
+    animation: cb .3s infinite forwards;
 }
 
 .grid_item{
     outline: 1px solid #ccc;
     margin: 1px 1px 0 0;
+}
+
+@keyframes cb{
+    to {
+        opacity: .99;
+    }
 }
